@@ -158,6 +158,7 @@ function App() {
         name:"PayPilot AI",
         description:"Payment Recovery Test",
         order_id:data.order.id,
+        method: "upi",
         prefill:{name:selected.customer,email:"test@example.com",contact:"9000000000"},
         theme:{color:"#3399cc"},
         handler:async function(response) {
