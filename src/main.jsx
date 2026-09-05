@@ -142,7 +142,7 @@ function App() {
       setCustomerStatus("processing");
       paymentAttemptRef.current = true;
 
-      const response = await fetch("http://localhost:5000/api/create-order", {
+      const response = await fetch("https://paypilot-ai-razorpay-buildathon.onrender.com/api/create-order", {
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify({amount:selected.amount})
@@ -162,7 +162,7 @@ function App() {
         theme:{color:"#3399cc"},
         handler:async function(response) {
           try {
-            const verifyResponse = await fetch("http://localhost:5000/api/verify-payment", {
+            const verifyResponse = await fetch("https://paypilot-ai-razorpay-buildathon.onrender.com/api/verify-payment", {
               method:"POST",
               headers:{"Content-Type":"application/json"},
               body:JSON.stringify({
