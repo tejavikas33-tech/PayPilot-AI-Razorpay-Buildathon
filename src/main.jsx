@@ -152,7 +152,7 @@ function App() {
       if (!window.Razorpay) throw new Error("Razorpay Checkout script is not loaded");
 
       const options = {
-        key:"rzp_test_TXxlv4F5F4EtwB",
+        key:"rzp_test_TYOXKGBpkoMSH4",
         amount:data.order.amount,
         currency:data.order.currency,
         name:"PayPilot AI",
